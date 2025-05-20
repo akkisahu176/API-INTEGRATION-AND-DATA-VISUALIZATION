@@ -109,14 +109,14 @@ OPENWEATHER_API_KEY=your_api_key_here
 ```bash
 python weather_dashboard.py
 ```
-
+> ⚠️ Note: city.list.json is downloaded automatically on first run from OpenWeatherMap’s sample file archive to avoid large file uploads in the repository.
 ---
 
 ## 📁 Project Structure
 
 ```
 API-INTEGRATION-AND-DATA-VISUALIZATION/
-├── city.list.json          # List of cities (from OpenWeatherMap)
+├── city.list.json          # List of cities (from OpenWeatherMap)(will be downloaded automatiacally on first execution)
 ├── weather_dashboard.py    # Main application script
 ├── .env                    # Contains your API key (DO NOT UPLOAD)
 ├── .gitignore              # Includes .env and apienv/
