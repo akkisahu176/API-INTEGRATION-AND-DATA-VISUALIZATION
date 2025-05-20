@@ -95,7 +95,7 @@ source apienv/bin/activate  # On Mac/Linux
 pip install -r requirements.txt
 ```
 
-4. **Create a **\`\`** file to store your API key (DO NOT hardcode)**
+4. **Create a .env file to store your API key (DO NOT hardcode) **
 
 ```text
 # .env
