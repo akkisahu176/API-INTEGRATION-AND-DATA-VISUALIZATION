@@ -95,16 +95,20 @@ source apienv/bin/activate  # On Mac/Linux
 pip install -r requirements.txt
 ```
 
-4. **Create a .env file to store your API key (DO NOT hardcode) **
+4. **Create a `.env` file to store your API key (DO NOT hardcode) **
 
 ```text
 # .env
 OPENWEATHER_API_KEY=your_api_key_here
 ```
+5. **Get your free API key from OpenWeatherMap**
+
+  Go to [OpenWeatherMap](https://home.openweathermap.org/users/sign_up), create a free account, and generate your API key under the "API keys" section of your profile. Then   paste it in the `.env` file.
+
 
 > ℹ️ **Note on .gitignore:** This project includes a `.gitignore` file that ensures sensitive files like `.env` and the virtual environment directory `apienv/` are excluded from version control. This is a professional practice to keep credentials secure and repositories lightweight.
 
-5. Run the application
+6. Run the application
 
 ```bash
 python weather_dashboard.py
@@ -116,7 +120,7 @@ python weather_dashboard.py
 
 ```
 API-INTEGRATION-AND-DATA-VISUALIZATION/
-├── city.list.json          # List of cities (from OpenWeatherMap)(will be downloaded automatiacally on first execution)
+├── city.list.json          # List of cities (from OpenWeatherMap)(will be downloaded automatically on first execution)
 ├── weather_dashboard.py    # Main application script
 ├── .env                    # Contains your API key (DO NOT UPLOAD)
 ├── .gitignore              # Includes .env and apienv/
